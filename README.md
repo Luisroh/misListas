@@ -1,4 +1,4 @@
-# 🛒 Lista de la Compra - Full Stack
+# 🛒 Mis Listas - Full Stack
 
 ![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-5.0-092E20?style=for-the-badge&logo=django&logoColor=white)
