@@ -1,0 +1,118 @@
+/* Fondo oscuro detrás del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 20, 140, 0.5);
+    /* Morado oscuro con transparencia */
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s ease;
+}
+
+/* Tarjeta del modal */
+.modal-contenido {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 48px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(74, 20, 140, 0.3);
+    animation: slideUp 0.3s ease;
+    border: 2px solid #CE93D8;
+}
+
+.modal-icono {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.modal-titulo {
+    color: #4A148C;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.modal-mensaje {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.modal-producto {
+    color: #6A1B9A;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 16px;
+    background: #F3E5F5;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 12px 0 20px;
+}
+
+.modal-botones {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.modal-boton {
+    padding: 10px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modal-boton.cancelar {
+    background: #E0E0E0;
+    color: #555;
+}
+
+.modal-boton.cancelar:hover {
+    background: #BDBDBD;
+    transform: translateY(-2px);
+}
+
+.modal-boton.confirmar {
+    background: #6A1B9A;
+    color: white;
+}
+
+.modal-boton.confirmar:hover {
+    background: #4A148C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(106, 27, 154, 0.4);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
